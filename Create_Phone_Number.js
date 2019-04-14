@@ -17,3 +17,10 @@ function createPhoneNumber(numbers) {
     `${numbers[9]}`
   );
 }
+
+// The most amazin solution!
+function createPhoneNumber(numbers) {
+  numbers.reduce((acc, cur) => {
+    return acc.replace("x", cur);
+  }, "(xxx) xxx-xxxx");
+}
